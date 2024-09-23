@@ -1,0 +1,60 @@
+
+<div class="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static">
+  <img src="assets/images/navbar/logo.png" alt="Image" height="50">
+  <a pRipple class="cursor-pointer block lg:hidden text-200" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+      <i class="pi pi-bars text-4xl"></i>
+  </a>
+  <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full bg-gray-900 left-0 top-100 px-6 lg:px-0 z-5 shadow-2 lg:shadow-none">
+      <section></section>
+      <ul class="list-none p-0 m-0 flex lg:align-items-center text-white select-none flex-column lg:flex-row cursor-pointer">
+        <li>
+          <a pRipple class="flex px-0 lg:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+              <span>Strona główna</span>
+          </a>
+      </li>
+      <li>
+        <a pRipple class="flex px-0 lg:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+            <span>O nas</span>
+        </a>
+    </li>
+          <li class="relative">
+              <a pRipple class="flex px-0 lg:px-5 py-3 align-items-center hover:text-blue-600 font-medium transition-colors transition-duration-150"
+                  pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                  <span>Oferta</span>
+                  <i class="pi pi-chevron-down ml-auto lg:ml-3"></i>
+              </a>
+              <ul class="list-none text-900 p-0 m-0 border-round shadow-0 lg:shadow-2 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem">
+                  <li>
+                      <a pRipple class="flex p-3 align-items-center hover:surface-50 transition-colors transition-duration-150">
+                          <i class="pi pi-car text-2xl mr-2 text-blue-600"></i>
+                          <span>Wypożyczalnia</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a pRipple class="flex p-3 align-items-center hover:surface-50 transition-colors transition-duration-150">
+                          <i class="pi pi-shield text-2xl mr-2 text-blue-600"></i>
+                          <span>Inne</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a pRipple class="flex p-3 align-items-center hover:surface-50 transition-colors transition-duration-150">
+                          <i class="pi pi-users text-2xl mr-2 text-blue-600"></i>
+                          <span>Inne</span>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+
+
+          <li>
+              <a pRipple class="flex px-0 lg:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150">
+                  <span>Kontakt</span>
+              </a>
+          </li>
+      </ul>
+      <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0">
+          <button pButton pRipple label="Login" class="p-button-text font-bold"></button>
+          <button pButton pRipple label="Register" class="ml-3 p-button-outlined font-bold"></button>
+      </div>
+  </div>
+</div>

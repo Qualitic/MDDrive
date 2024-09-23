@@ -1,0 +1,26 @@
+<div class="px-4 py-8 md:px-6 lg:px-8 bg-backgroud">
+
+    <div class="grid">
+      <div class="col-12 md:col-6">
+        <div class="text-white font-bold text-5xl mb-3">Wypożyczalnia samochodów</div>
+        <div class="text-gray-200 text-2xl line-height-3">Znajdź idealne auto dla siebie.</div>
+        <div class="text-gray-200 text-2xl line-height-3">Sprawdź naszą bogatą ofertę</div>
+      </div>
+      <div class="col-12 row md:col-6 align-items-center md:justify-content-end">
+        <div class="col-12">
+          <div class="text-gray-200 font-medium justify-content-start mb-3">Data odbioru</div>
+          <p-calendar [style]="{'width':'100%'}" [(ngModel)]="startDate" [minDate]="minDateStart" dateFormat="dd/mm/yy" [showTime]="true" [showSeconds]="false"
+            [showIcon]="true" [inputStyleClass]="'bg-transparent text-gray-200 border-gray-400'"></p-calendar>
+        </div>
+        <div class="col-12">
+          <div class="text-gray-200 font-medium justify-content-start mb-3">Data zwrotu</div>
+          <p-calendar [style]="{'width':'100%'}" [(ngModel)]="endDate" [minDate]="minDateStart" dateFormat="dd/mm/yy" [showIcon]="true" [showTime]="true"
+            [showSeconds]="false" [inputStyleClass]="'bg-transparent text-gray-200 border-gray-400'"></p-calendar>
+        </div>
+        <div class="col-12">
+          <button pButton pRipple label="Szukaj" icon="pi pi-search" class="block mt-3 font-bold white-space-nowrap w-full"></button>
+        </div>
+      </div>
+    </div>
+
+</div>
